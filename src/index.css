@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+body {
+  font-family: Raleway, sans-serif;
+  margin: 0;
+  font-size: 1.5em;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  background-image: url("https://img.freepik.com/free-photo/aesthetic-dark-wallpaper-background-neon-light_53876-128291.jpg?size=626&ext=jpg&ga=GA1.2.485553358.1655546410");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /* height: 300vh;
+  width:100%; */
+  color: #fff;
+}
+
+h1{
+  font-family: 'Bree Serif', serif;
+  color: rgb(255, 255, 255);
+  box-shadow: 4px;
+  box-shadow: 0px 5px 50px rgb(2, 71, 106) inset , 0px 5px 10px rgb(0, 166, 255), 0px 5px 50px rgb(0, 166, 255) inset , 0px 5px 50px rgb(0, 166, 255);
+  text-shadow: 0px 0px 5px #2eb6b6, 0px 0px 10px #2eb6b6, 0px 0px 10px #2eb6b6,
+    0px 0px 20px #2eb6b6;
+}
+.glow-on-hover {
+  font-family: 'Bree Serif', serif;
+  /* width: 220px;
+  height: 50px; */
+  border: none;
+  outline: 2px solid #fff;
+  color: #fff;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+p{
+  font-family: 'Bree Serif', serif;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-shadow: 12px 12px 18px rgba(11, 220, 223, 0.575);
+  box-shadow: 0px 5px 50px rgb(0, 166, 255) inset , 0px 5px 10px rgb(0, 166, 255), 0px 5px 50px rgb(0, 166, 255);
+}
